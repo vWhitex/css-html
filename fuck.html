@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #333;
+    }
+
+    nav {
+        background-color: gray;
+    }
+
+    main {
+        background-color: rebeccapurple;
+    }
+
+    article {
+        background-color: pink;
+        
+    }
+
+    aside {
+        background-color: grey;
+    }
+
+    footer{
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        border-radius: 30px;
+    }
+
+    footer, header, main, article, aside, nav{
+        border-radius: 30px;
+    }
+
+    
+
+    .container {
+        display: flex;
+    }
+    footer {
+        padding: 1rem;
+        border-radius: 30px;
+    }
+
+    h1 + a{
+        color: blueviolet;
+        font-size: 1.4rem;
+    }
+
+    h1 ~ a {
+        font-size: 1.8rem;
+    }
+
+    h1 ~ a:hover{
+        border-bottom: 10px solid aliceblue;
+    }
+
+    section > p{
+        color: palevioletred;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    summary , button{
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>logo ,otsing , autri nini/brand, sjhdashdjhdhgahdga</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Item 1</a></li>
+            <li><a href="">Item 2</a></li>
+            <li><a href="">Item 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Paigutamine 4</h1>
+        <p>Flex ja semantilised elemendid + globaalsed parameetrid</p>
+
+        <article>
+            <section>
+                <h2>sektsioon 2</h2>
+            </section>
+        </article>
+
+        <article>
+            <section>
+                <h2 dir="rtl"> sektsioon 2</h2dir></h2>
+                <p autocapitalize="characters">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quidem veniam accusamus dignissimos delectus excepturi ab non nostrum. Ratione culpa reprehenderit et. Reiciendis velit odit architecto veritatis, deleniti quibusdam maiores!</p>
+            </section>
+        </article>
+
+        <article contenteditable="true">
+            <section>
+                <h2 dir="rtl"> sektsioon 3</h2dir></h2>
+                <p autocapitalize="characters">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore quidem veniam accusamus dignissimos delectus excepturi ab non nostrum. Ratione culpa reprehenderit et. Reiciendis velit odit architecto veritatis, deleniti quibusdam maiores!</p>
+            </section>
+            <section>
+                <details>
+                    <summary><h2>Vorm</h2></summary>
+                    <button popovertarget="my-popover">open popover</button>
+                </details>
+                <form action="" popover id="my-popover">
+                    <input type="text" name="" id="">
+                    <input type="gmail">
+                    <input type="gmail">
+                    <input type="gmail">
+                    <input type="password" name="" id="">
+                    <input type="number" name="" id="">
+                    <input type="tel" name="" id="">
+                    <input type="url">
+                    <button>Button</button>
+                </form>
+            </section>
+        </article>
+        <aside>
+            <h3>Sidebar</h3>
+            <a accesskey="a" href=""></a>
+        </aside>
+    </main>
+    <footer>
+        tra nahhui blyat suka
+    </footer>
+</body>
+
+</html>
